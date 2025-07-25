@@ -1,0 +1,1 @@
+A phishing email with a malicious link "https://docs.google.com/forms/d/1PvPSzx7kz5gZnat8Y9zGV-M4yTf22ETYWuY_YzxwR64/edit" was detected and an incident response plan was developed. Thankfully there was no damage as no one clicked on the link and reported it to the cybersecurity team. The necessary steps were taken to detect,contain.eradicate and recover.
