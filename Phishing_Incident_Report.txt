@@ -1,0 +1,99 @@
+1.Detection of Phising Email:
+8:19 PM – User reported suspicious email from sruthi.upp@gmail.com
+8:22 AM – Alert triggered: Malicious link detected in email body
+Opened VirusTotal and analyzed the link
+Found:malware,unknown ip
+
+2.Containment:
+*Isolating the user's computer
+# Simulated command to isolate infected device
+CrowdStrike isolate-endpoint --user nagas
+*Disabling the user's account in command prompt
+bash
+net user nagas /active:no
+*Blocked the bad link
+127.0.0.1 forms.gle
+
+Actions taken:
+
+Blocked phishing domain
+Isolated user endpoint
+Disabled user account
+
+3.Eradication
+*Ran a virus scan
+Uses Windows Defender (Start > Windows Security > Virus & threat protection > Quick Scan)
+
+*Flushed DNS
+
+Opened Command Prompt and typed:
+
+bash
+ipconfig /flushdns
+
+*Deleted the phising email
+
+4.Recovery
+
+*I reset the password for user
+
+*Enabled MFA
+
+*Wrote an awareness training email
+
+5.Report/Post Incident Recovery
+
+Phishing Incident Response Report
+Date: 07/24/2025
+
+1. Executive Summary
+
+A phishing email pretending to be from HR targeted employees with a fake login link. One user clicked, and the incident was contained and resolved in under an hour.
+
+2. Detection
+
+Email received from sruthi.upp@gmail.com
+
+Suspicious link: https://docs.google.com/forms/d/e/1FAIpQLSd1xiRLE38Tny3hwM7WnbdM2C_l2FjS_TS8vIIojZ7G9LLv6w/viewform?usp=header
+
+Reported by user and confirmed with link analysis
+3. Containment
+
+Disabled affected user account
+
+Blocked domain in simulated firewall
+
+Isolated endpoint
+
+4. Eradication
+
+Email deleted
+
+Virus scan completed (Windows Defender)
+
+DNS cache flushed
+5. Recovery
+
+User password reset
+
+MFA enforced
+
+Awareness email sent to all employees
+
+6. Recommendations
+
+Use DMARC and SPF to prevent spoofing
+
+Conduct regular phishing simulations
+
+Train employees quarterly
+
+
+
+
+
+
+
+
+
+
